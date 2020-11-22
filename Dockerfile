@@ -9,6 +9,8 @@ RUN apt-get update && \
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN echo "export PATH=$PATH" > /etc/environment
+
 EXPOSE 5000
 
 RUN [ "chmod", "+x", "entrypoint.sh" ]
