@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+ </head>
+ <body>
+  <h3>Hello World!</h3>
+
+  {% if today %}
+  <p> Date: {{today}}</p>
+  {% endif %}
+  {% if address %} 
+  <p>IP: {{address}}</p>
+  {% endif %}
+  {% if hostname %} 
+  <p>Hostname: {{hostname}}</p>
+  {% endif %}
+  {% if redismsg %} 
+  <p>Redis: {{redismsg}}</p>
+  {% endif %}
+ </body>
+</html>
